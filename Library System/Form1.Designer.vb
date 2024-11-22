@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Dashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,10 +22,38 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        BookTable = New TableLayoutPanel()
+        SuspendLayout()
+        ' 
+        ' BookTable
+        ' 
+        BookTable.ColumnCount = 5
+        BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        BookTable.Location = New Point(0, -1)
+        BookTable.Name = "BookTable"
+        BookTable.RowCount = 4
+        BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
+        BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
+        BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
+        BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
+        BookTable.Size = New Size(1074, 647)
+        BookTable.TabIndex = 0
+        ' 
+        ' Dashboard
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1074, 648)
+        Controls.Add(BookTable)
+        Name = "Dashboard"
+        Text = "Dashboard"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents BookTable As TableLayoutPanel
 
 End Class
