@@ -29,30 +29,32 @@ Partial Class Book
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Location = New Point(28, 12)
+        PictureBox1.Dock = DockStyle.Fill
+        PictureBox1.Location = New Point(0, 0)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(100, 115)
+        PictureBox1.Size = New Size(832, 460)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
-        PictureBox1.ImageLocation = CoverImage
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Location = New Point(59, 136)
         Label1.Name = "Label1"
-        Label1.Size = New Size(64, 15)
+        Label1.Size = New Size(0, 15)
         Label1.TabIndex = 1
-        Label1.Text = Title
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Book
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
+        Margin = New Padding(0)
         Name = "Book"
-        Size = New Size(150, 161)
+        Size = New Size(832, 460)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()

@@ -27,20 +27,24 @@ Partial Class Dashboard
         ' 
         ' BookTable
         ' 
+        BookTable.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         BookTable.ColumnCount = 5
         BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
         BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
         BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
         BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
         BookTable.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
-        BookTable.Location = New Point(0, -1)
+        BookTable.Dock = DockStyle.Fill
+        BookTable.GrowStyle = TableLayoutPanelGrowStyle.FixedSize
+        BookTable.Location = New Point(0, 0)
+        BookTable.Margin = New Padding(0)
         BookTable.Name = "BookTable"
         BookTable.RowCount = 4
         BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
         BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
         BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
         BookTable.RowStyles.Add(New RowStyle(SizeType.Percent, 25F))
-        BookTable.Size = New Size(1074, 647)
+        BookTable.Size = New Size(1074, 648)
         BookTable.TabIndex = 0
         ' 
         ' Dashboard
